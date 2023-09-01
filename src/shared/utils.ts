@@ -1,4 +1,4 @@
-import { WeekDays } from '@prisma/client';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export const asyncForEach = async (array: any[], callback: any) => {
   if (!Array.isArray(array)) {
@@ -13,12 +13,12 @@ export const hasTimeConflict = (
   existingSlots: {
     startTime: string;
     endTime: string;
-    dayOfWeek: WeekDays;
+    dayOfWeek: 'WeekDays';
   }[],
   newSlot: {
     startTime: string;
     endTime: string;
-    dayOfWeek: WeekDays;
+    dayOfWeek: 'WeekDays';
   }
 ) => {
   for (const slot of existingSlots) {
