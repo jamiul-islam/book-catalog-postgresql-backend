@@ -2,6 +2,6 @@
 
 ## ER Diagram
 
-<!-- ![ER Diagram](ER-diragram-39.png) -->
+![ER Diagram](ER-diragram.png)
 
 ## Api Reference
