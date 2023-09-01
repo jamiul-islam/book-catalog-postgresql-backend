@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/.a2be87fbf5dcc89595c68031d4f92411202e754a-audit.json",
+    "files": [
+        {
+            "date": 1693585979310,
+            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-01-09-22-error.log",
+            "hash": "71c7753a8b781cc57fed68bdf8701ed02789926c157907a3c8b835d2fc569c32"
+        }
+    ],
+    "hashType": "sha256"
+}

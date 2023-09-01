@@ -15,14 +15,14 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/v1', routes);
+// app.use('/api/v1', routes);
 
 //global error handler
 app.use(globalErrorHandler);
 
 // testing route
 app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome to the Core service api');
+  res.send('welcome to the book catalog api');
 });
 
 //handle not found
