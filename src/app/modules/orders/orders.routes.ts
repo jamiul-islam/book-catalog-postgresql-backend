@@ -5,6 +5,8 @@ import { orderValidation } from './orders.validations';
 
 const router = express.Router();
 
+router.get('/', OrderController.getAllFromDB);
+
 router.post(
   '/create-order',
   validateRequest(orderValidation.create),
