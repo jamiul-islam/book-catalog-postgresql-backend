@@ -33,3 +33,5 @@ api/v1/categories/f1f9205e-6214-41b5-a167-719bf47fda31 (DELETE)
 
 - authorization for user route
 - authorization for category
+- authorization for book
+- filtering for book
