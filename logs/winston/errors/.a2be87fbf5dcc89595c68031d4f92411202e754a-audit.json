@@ -44,6 +44,11 @@
             "date": 1693646801869,
             "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-15-error.log",
             "hash": "1883405c823a5205887a2b5cbb14a9c817045a2ec855430672dfbd1689496ffe"
+        },
+        {
+            "date": 1693649042857,
+            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-16-error.log",
+            "hash": "4811c994a0f812d5277e0eec8ecff3934e397969f1f5f59905e7dce1892ecc0b"
         }
     ],
     "hashType": "sha256"

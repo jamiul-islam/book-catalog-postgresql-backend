@@ -11,14 +11,14 @@ datasource db {
 }
 
 model User {
-  id            String            @id @default(uuid())
-  name          String
-  email         String            @unique
-  password      String
-  role          String
-  contactNo     String
-  address       String
-  profileImg    String?
+  id         String  @id @default(uuid())
+  name       String
+  email      String  @unique
+  password   String
+  role       String
+  contactNo  String
+  address    String
+  profileImg String?
 
   review_rating ReviewAndRating[]
   order         Order[]
@@ -44,7 +44,6 @@ model Book {
   category   Category @relation(fields: [categoryId], references: [id])
 
   reviewAndRating ReviewAndRating[]
-  orderedBook     OrderedBook[]
 
   @@map("book")
 }
@@ -63,24 +62,15 @@ model ReviewAndRating {
 }
 
 model Order {
-  id           String        @id @default(uuid())
+  id           String   @id @default(uuid())
   userId       String
-  status       String        @default("pending")
-  createdAt    DateTime
-  user         User          @relation(fields: [userId], references: [id])
-  orderedBooks OrderedBook[]
+  
+  orderedBooks Json[]
+
+  createdAt    DateTime @default(now())
+  status       String   @default("pending")
+
+  user User @relation(fields: [userId], references: [id])
 
   @@map("order")
-}
-
-model OrderedBook {
-  id       String @id @default(uuid())
-  orderId  String
-  bookId   String
-  quantity Int
-
-  order Order @relation(fields: [orderId], references: [id])
-  book  Book  @relation(fields: [bookId], references: [id])
-
-  @@map("ordered_book")
 }

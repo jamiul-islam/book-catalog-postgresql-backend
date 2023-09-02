@@ -49,19 +49,10 @@ CREATE TABLE "order" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "status" TEXT NOT NULL DEFAULT 'pending',
-    "createdAt" TIMESTAMP(3) NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "orderedBooks" JSONB[],
 
     CONSTRAINT "order_pkey" PRIMARY KEY ("id")
-);
-
--- CreateTable
-CREATE TABLE "ordered_book" (
-    "id" TEXT NOT NULL,
-    "orderId" TEXT NOT NULL,
-    "bookId" TEXT NOT NULL,
-    "quantity" INTEGER NOT NULL,
-
-    CONSTRAINT "ordered_book_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
@@ -78,9 +69,3 @@ ALTER TABLE "reviews" ADD CONSTRAINT "reviews_bookId_fkey" FOREIGN KEY ("bookId"
 
 -- AddForeignKey
 ALTER TABLE "order" ADD CONSTRAINT "order_userId_fkey" FOREIGN KEY ("userId") REFERENCES "user"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE "ordered_book" ADD CONSTRAINT "ordered_book_orderId_fkey" FOREIGN KEY ("orderId") REFERENCES "order"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE "ordered_book" ADD CONSTRAINT "ordered_book_bookId_fkey" FOREIGN KEY ("bookId") REFERENCES "book"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
