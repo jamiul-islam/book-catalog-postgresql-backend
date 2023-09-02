@@ -48,10 +48,3 @@ api/v1/orders/create-order(POST)
 api/v1/orders (GET)
 api/v1/orders/:orderId (GET)
 ```
-
-## pending
-
-- authorization for user route
-- authorization for category
-- authorization for book
-- filtering for book - DONE
