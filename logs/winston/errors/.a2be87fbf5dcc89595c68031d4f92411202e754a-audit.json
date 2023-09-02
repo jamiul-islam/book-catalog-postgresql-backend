@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/.a2be87fbf5dcc89595c68031d4f92411202e754a-audit.json",
+  "files": [
+    {
+      "date": 1693585979310,
+      "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-01-09-22-error.log",
+      "hash": "71c7753a8b781cc57fed68bdf8701ed02789926c157907a3c8b835d2fc569c32"
     },
-    "auditLog": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/.a2be87fbf5dcc89595c68031d4f92411202e754a-audit.json",
-    "files": [
-        {
-            "date": 1693585979310,
-            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-01-09-22-error.log",
-            "hash": "71c7753a8b781cc57fed68bdf8701ed02789926c157907a3c8b835d2fc569c32"
-        },
-        {
-            "date": 1693587706631,
-            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-01-09-23-error.log",
-            "hash": "583d78664dcdaf42ebb757c7f253f3fc1de98b075c0232ba28274260d4417a75"
-        },
-        {
-            "date": 1693592004904,
-            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-00-error.log",
-            "hash": "71ec6025ded01df604d0c851765a48d3c805d4b0d45c7c66bfb761b5506cd9ee"
-        },
-        {
-            "date": 1693634184965,
-            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-11-error.log",
-            "hash": "d156504adcfcffae1608286840755600e912584671a51f007d262b228329d3ba"
-        },
-        {
-            "date": 1693634900647,
-            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-12-error.log",
-            "hash": "a152dcc4907dd8e52a456af5ece64c65127f894ecdae9046ba58cb016f643b53"
-        },
-        {
-            "date": 1693638009991,
-            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-13-error.log",
-            "hash": "393edc4a78f97b0fa3cfc01e673d2d5c8887238a5f07c1e5d4aef233fcd60347"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1693587706631,
+      "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-01-09-23-error.log",
+      "hash": "583d78664dcdaf42ebb757c7f253f3fc1de98b075c0232ba28274260d4417a75"
+    },
+    {
+      "date": 1693592004904,
+      "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-00-error.log",
+      "hash": "71ec6025ded01df604d0c851765a48d3c805d4b0d45c7c66bfb761b5506cd9ee"
+    },
+    {
+      "date": 1693634184965,
+      "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-11-error.log",
+      "hash": "d156504adcfcffae1608286840755600e912584671a51f007d262b228329d3ba"
+    },
+    {
+      "date": 1693634900647,
+      "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-12-error.log",
+      "hash": "a152dcc4907dd8e52a456af5ece64c65127f894ecdae9046ba58cb016f643b53"
+    },
+    {
+      "date": 1693638009991,
+      "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/errors/ucs-2023-02-09-13-error.log",
+      "hash": "393edc4a78f97b0fa3cfc01e673d2d5c8887238a5f07c1e5d4aef233fcd60347"
+    }
+  ],
+  "hashType": "sha256"
 }
