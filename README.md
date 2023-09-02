@@ -34,7 +34,9 @@ api/v1/categories/f1f9205e-6214-41b5-a167-719bf47fda31 (DELETE)
 ```javascript
 api/v1/books/create-book (POST)
 api/v1/books (GET)
-api/v1/books/f64dd9fc-3752-4bc4-abcc-607a60a50088 (GET)
+api/v1/books?limit=2 (GET) //filtering
+api/v1/books/f64dd9fc-3752-4bc4-abcc-607a60a50088 (GET by id)
+api/v1/books/category/0a15269c-2b44-4911-854b-21e7e81734d0 (GET by category)
 api/v1/books/f64dd9fc-3752-4bc4-abcc-607a60a50088 (PATCH)
 api/v1/books/f64dd9fc-3752-4bc4-abcc-607a60a50088 (DELETE)
 ```
@@ -44,4 +46,4 @@ api/v1/books/f64dd9fc-3752-4bc4-abcc-607a60a50088 (DELETE)
 - authorization for user route
 - authorization for category
 - authorization for book
-- filtering for book
+- filtering for book - DONE
