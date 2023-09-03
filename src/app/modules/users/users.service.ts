@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { User } from '@prisma/client';
+import { ITokenRequest } from '../../../interfaces/common';
 import prisma from '../../../prisma';
 
 const insertIntoDB = async (data: User): Promise<User> => {
@@ -34,6 +35,16 @@ const getByIdFromDB = async (id: string): Promise<User | null> => {
   return result;
 };
 
+const getByTokenFromDB = async (token: ITokenRequest): Promise<User | null> => {
+  const result = await prisma.user.findUnique({
+    where: {
+      id: token.userID,
+    },
+  });
+
+  return result;
+};
+
 const updateIntoDB = async (id: string, data: Partial<User>): Promise<User> => {
   const result = await prisma.user.update({
     where: {
@@ -59,6 +70,7 @@ export const UserService = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
+  getByTokenFromDB,
   updateIntoDB,
   deleteFromDB,
 };

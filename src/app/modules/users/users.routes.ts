@@ -15,6 +15,12 @@ router.get(
   UserController.getByIdFromDB
 );
 
+router.get(
+  '/profile',
+  auth(ENUM_USER_ROLE.CUSTOMER, ENUM_USER_ROLE.ADMIN),
+  UserController.getByTokenFromDB
+);
+
 router.post(
   '/auth/signup',
   validateRequest(UserValidation.create),
