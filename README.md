@@ -45,6 +45,8 @@ api/v1/books/24986897-75e9-4bbc-a5d0-68d0d24ac0df (DELETE)
 
 ```javascript
 api/v1/orders/create-order(POST)
+// ********* authorization header **********
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1OTQ1NzkyYi00MWNhLTRlOTEtYmNkYy1hNTYxMzFkYjZkYTMiLCJyb2xlIjoiY3VzdG9tZXIifQ.UZaqEd1q1M5cQWzjsg4kZTBGt-nd5Kdqs-wfUYO1BDI
 api/v1/orders (GET)
 api/v1/orders/:orderId (GET)
 ```

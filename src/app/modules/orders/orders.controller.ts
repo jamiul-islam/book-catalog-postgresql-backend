@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
+import { customerRequest } from './orders.interface';
 import { OrderService } from './orders.service';
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
@@ -15,7 +16,7 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = await OrderService.getAllFromDB();
+  const result = await OrderService.getAllFromDB(req.user as customerRequest);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,

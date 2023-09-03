@@ -54,6 +54,16 @@
             "date": 1693653230416,
             "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/successes/ucs-2023-02-09-17-success.log",
             "hash": "06ae243b5d94772ebac1d34553dd562af53d6610ff1d4a0d4887c05111c6820e"
+        },
+        {
+            "date": 1693724512735,
+            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/successes/ucs-2023-03-09-13-success.log",
+            "hash": "5f9f770d15dcbb60e7cf7815e3e3c8557c37db46ce8da1a76eb1055e0d48e235"
+        },
+        {
+            "date": 1693731606091,
+            "name": "/Users/tomcat1112k/Desktop/Next Level/06. Postgres & Prisma/assignment-book-catalog-backend/book-catalog-postgresql-backend/logs/winston/successes/ucs-2023-03-09-15-success.log",
+            "hash": "1db2e999ebe297dbc9240e10873acc742aceb182d325a9def7a9a042e94665ff"
         }
     ],
     "hashType": "sha256"
