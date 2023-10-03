@@ -27,6 +27,8 @@ router.post(
   UserController.insertIntoDB
 );
 
+router.post('/auth/signin', UserController.signInFromDB);
+
 router.patch(
   '/users/:id',
   auth(ENUM_USER_ROLE.ADMIN),

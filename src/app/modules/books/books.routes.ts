@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get('/', BookController.getAllFromDB);
 router.get('/:id', BookController.getByIdFromDB);
-router.get('/category/:categoryId', BookController.getByCategoryFromDB);
+router.get('/:categoryId/category', BookController.getByCategoryFromDB);
 
 router.post(
   '/create-book',

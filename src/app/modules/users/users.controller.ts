@@ -46,6 +46,16 @@ const getByTokenFromDB = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const signInFromDB = catchAsync(async (req: Request, res: Response) => {
+  const result = await UserService.signInFromDB(req.body);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'User fetched successfully',
+    token: result,
+  });
+});
+
 const updateIntoDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const result = await UserService.updateIntoDB(id, req.body);
@@ -72,6 +82,7 @@ export const UserController = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
+  signInFromDB,
   updateIntoDB,
   deleteFromDB,
   getByTokenFromDB,
