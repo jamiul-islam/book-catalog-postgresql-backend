@@ -60,7 +60,7 @@ const signInFromDB = async (data: Partial<User>): Promise<string> => {
   }
 
   // return a jwt token using the user email and password
-  const token = jwt.sign({ id: result?.id, name: result?.name }, 'secret', {
+  const token = jwt.sign({ userId: result?.id, role: result?.role }, 'secret', {
     expiresIn: '365d',
   });
 
